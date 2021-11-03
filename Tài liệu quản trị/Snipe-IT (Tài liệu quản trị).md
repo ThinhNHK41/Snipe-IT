@@ -1,8 +1,8 @@
-**Công cụ quản lý tài sản Snipe-IT**
+# **Công cụ quản lý tài sản Snipe-IT**
 
-**I. Các bước cài đặt Snipe-IT trên CentOS 8 (GUI)**
+## **I. Các bước cài đặt Snipe-IT trên CentOS 8 (GUI)**
 
-**Bước 1: Cập nhật phần phụ thuộc Máy chủ & Cài đặt của bạn**
+### **Bước 1: Cập nhật phần phụ thuộc Máy chủ & Cài đặt của bạn**
 
 \- Cập nhật hệ thống CentOS của bạn
 
@@ -18,7 +18,7 @@
 ![](.//media/image2.png)
 
 
-**Bước 2: Cài đặt máy chủ web Apache**
+### **Bước 2: Cài đặt máy chủ web Apache**
 
 \- Máy chủ Apache httpd sẽ được sử dụng để lưu trữ ứng dụng web Snipe-IT
 Asset Management trên CentOS 8. Cài đặt nó bằng cách chạy các lệnh sau:
@@ -36,7 +36,7 @@ Asset Management trên CentOS 8. Cài đặt nó bằng cách chạy các lệnh
 ![](.//media/image4.png)
 
 
-**Bước 3: Cài đặt PHP và các module**
+### **Bước 3: Cài đặt PHP và các module**
 
 \- PHP cũng cần thiết như một phụ thuộc chính. Làm theo hướng dẫn này để
 cài đặt PHP 7.4 trên hệ thống của bạn
@@ -44,7 +44,7 @@ cài đặt PHP 7.4 trên hệ thống của bạn
 \- Các kho EPEL và REMI là những yêu cầu chính cho việc cài đặt này.
 Thêm chúng vào hệ thống bằng cách chạy lệnh sau:
 
-a\. Thêm kho EPEL và REMI:
+**a\. Thêm kho EPEL và REMI:**
 
 **sudo yum -y install
 <https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm>**
@@ -58,7 +58,7 @@ a\. Thêm kho EPEL và REMI:
 ![](.//media/image6.png)
 
 
-b\. Cài đặt PHP 7.4 trên CentOS 8:
+**b\. Cài đặt PHP 7.4 trên CentOS 8:**
 
 **sudo dnf -y install dnf-utils**
 
@@ -70,7 +70,7 @@ b\. Cài đặt PHP 7.4 trên CentOS 8:
 ![](.//media/image8.png)
 
 
-c\. Sử dụng lệnh tiếp theo để cài đặt các gói bổ sung:
+**c\. Sử dụng lệnh tiếp theo để cài đặt các gói bổ sung:**
 
 **sudo dnf update**
 
@@ -85,16 +85,16 @@ php-mcrypt php-bcmath**
 
 ![](.//media/image10.png)
 
-**Bước 4: Cài đặt máy chủ cơ sở dữ liệu MariaDB**
+### **Bước 4: Cài đặt máy chủ cơ sở dữ liệu MariaDB**
 
-a\. Cập nhật hệ thống:
+**a\. Cập nhật hệ thống:**
 
 **sudo dnf -y upgrade**
 
 ![](.//media/image11.png)
 
 
-b\. Thêm kho lưu trữ MariaDB 10.4 vào CentOS 8
+**b\. Thêm kho lưu trữ MariaDB 10.4 vào CentOS 8**
 
 **sudo tee /etc/yum.repos.d/MariaDB.repo\<\<EOF**
 
@@ -115,7 +115,7 @@ EOF
 
 Sau khi copy xong nhấn enter để hoàn tất quá trình lưu trữ
 
-c\. Cài đặt kho lưu trữ MariaDB 10.4 cho CentOS 8:
+**c\. Cài đặt kho lưu trữ MariaDB 10.4 cho CentOS 8:**
 
 **sudo dnf install boost-program-options**
 
@@ -151,11 +151,11 @@ sudo bash**
 ![](.//media/image17.png)
 
 
-d\. Bảo mật máy chủ cơ sở dữ liệu MariaDB: (Có thể bỏ qua)
+**d\. Bảo mật máy chủ cơ sở dữ liệu MariaDB: (Có thể bỏ qua)**
 
 **sudo mysql_secure_installation**
 
-e\. Khởi động và kích hoạt MariaDB:
+**e\. Khởi động và kích hoạt MariaDB:**
 
 **sudo systemctl start mariadb.service**
 
@@ -164,16 +164,16 @@ e\. Khởi động và kích hoạt MariaDB:
 ![](.//media/image18.png)
 
 
-**Bước 5: Tạo cơ sở dữ liệu Snipe-IT**
+### **Bước 5: Tạo cơ sở dữ liệu Snipe-IT**
 
-a\. Vào Mariadb để tạo cơ sở dữ liệu:
+**a\. Vào Mariadb để tạo cơ sở dữ liệu:**
 
 **mysql -u root -p**
 
 ![](.//media/image19.png)
 
 
-b\. Tạo cơ sở dữ liệu:
+**b\. Tạo cơ sở dữ liệu:**
 
 CREATE DATABASE **snipeit**;
 
@@ -195,13 +195,13 @@ EXIT;
 ![](.//media/image22.png)
 
 
-**Bước 6: Cài đặt PHP Composer**
+### **Bước 6: Cài đặt PHP Composer**
 
 \- Composer là một trình quản lý gói ứng dụng PHP được tạo ra để cung
 cấp một định dạng tiêu chuẩn để quản lý các phần phụ thuộc của phần mềm
 PHP và các thư viện bắt buộc.
 
-a\. Cài đặt PHP và tải composer:
+**a\. Cài đặt PHP và tải composer:**
 
 **sudo dnf install \@php**
 
@@ -218,7 +218,7 @@ a\. Cài đặt PHP và tải composer:
 ![](.//media/image25.png)
 
 
-b\. Cài đặt PHP Composer trên CentOS 8:
+**b\. Cài đặt PHP Composer trên CentOS 8:**
 
 **sudo php composer-installer.php --filename=composer
 --install-dir=/usr/local/bin**
@@ -230,14 +230,14 @@ b\. Cài đặt PHP Composer trên CentOS 8:
 
 ![](.//media/image27.png)
 
-**Bước 7: Tải phần mềm Snipe-IT trên CentOS 8**
+### **Bước 7: Tải phần mềm Snipe-IT trên CentOS 8**
 
 **sudo git clone https://github.com/snipe/snipe-it /var/www/html/snipe**
 
 ![](.//media/image28.png)
 
 
-**Bước 8: Cấu hình Snipe-IT**
+### **Bước 8: Cấu hình Snipe-IT**
 
 \- Sau khi bạn có bản sao của Snipe-IT trong máy chủ cục bộ của mình,
 bây giờ ta hãy tiến hành cấu hình nó.
@@ -318,14 +318,14 @@ như sau:
 ![](.//media/image34.png)
 
 
-**Bước 9: Cài đặt các gói cần thiết của PHP bằng Composer**
+### **Bước 9: Cài đặt các gói cần thiết của PHP bằng Composer**
 
 **sudo /usr/local/bin/composer install \--no-dev \--prefer-source**
 
 ![](.//media/image35.png)
 
 
-**Bước 10: Tạo \"APP_Key\"**
+### **Bước 10: Tạo \"APP_Key\"**
 
 **sudo php artisan key:generate**
 
@@ -340,7 +340,7 @@ set successfully.
 
 ![](.//media/image36.png)
 
-**Bước 11: Cấu hình Apache**
+### **Bước 11: Cấu hình Apache**
 
 \- Cấu hình dịch vụ tường lửa của bạn để cho phép cổng http:
 
@@ -395,7 +395,7 @@ Khởi động lại apache:
 ![](.//media/image41.png)
 
 
-**Bước 12: Cấu hình SELinux**
+### **Bước 12: Cấu hình SELinux**
 
 **sudo yum provides /usr/sbin/semanage**
 
@@ -440,7 +440,7 @@ hãy chạy lệnh sau với quyền root
 ![](.//media/image48.png)
 
 
-**Bước 13: Truy cập vào tên miền mà bạn đang host mã nguồn Snipe-IT.**
+### **Bước 13: Truy cập vào tên miền mà bạn đang host mã nguồn Snipe-IT.**
 
 VD: http://192.168.17.141
 
@@ -466,7 +466,7 @@ VD: http://192.168.17.141
 ![](.//media/image54.png)
 
 
-**II. Backup dữ liệu của Snipe-IT**
+## **II. Backup dữ liệu của Snipe-IT**
 
 \- Ta sẽ sử dụng công cụ Rclone để back up dữ liệu của các server lên
 Google Drive.
@@ -511,7 +511,7 @@ Google Drive.
 \- Tự động xóa file backup trên VPS sau khi upload xong, xóa file backup
 trên Cloud nếu quá 2 tuần.
 
-**1. Cài đặt Rclone**
+### **a. Cài đặt Rclone**
 
 \- Cài đặt bản mới nhất với hệ điều hành Linux 64bit
 
@@ -534,7 +534,7 @@ rm -rf rclone-\*
 ![](.//media/image57.png)
 
 
-**b. Back up dữ liệu lên Cloud với Rclone**
+### **b. Back up dữ liệu lên Cloud với Rclone**
 
 \- Tạo kết nối với Google Drive
 
@@ -623,7 +623,7 @@ rm -rf rclone-\*
 > ![](.//media/image73.png)
 > 
 
-**c. Script backup toàn bộ Zulip và upload lên Cloud**
+### **c. Script backup toàn bộ Zulip và upload lên Cloud**
 
 \- Ta tạo file backup.sh và nhấp nối dung sau: (Lưu ý: ở phần
 SERVER_NAME là tên thư mục bạn tạo trên Drive, REMOTE_NAME là zulip như
@@ -776,7 +776,7 @@ rclone lsl snipeit:Snipeit
 
 ![](.//media/image81.png)
 
-**d. Tạo cronjob tự động backup hàng ngày**
+### **d. Tạo cronjob tự động backup hàng ngày**
 
 crontab -e
 
@@ -788,7 +788,7 @@ crontab -e
 ![](.//media/image83.png)
 
 
-**e. Tải file backup từ Cloud xuống VPS**
+### **e. Tải file backup từ Cloud xuống VPS**
 
 \- Cách đơn giản nhất để bạn khôi phục lại dữ liệu đó là tỉa file backup
 từ Cloud xuống máy tính, rồi tùy chọn theo như cầu mà up trở lại lên

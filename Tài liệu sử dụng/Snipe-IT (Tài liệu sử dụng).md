@@ -1,8 +1,8 @@
-**Hướng dẫn sử dụng Snipe-IT cơ bản**
+# **Hướng dẫn sử dụng Snipe-IT cơ bản**
 
-**I. Thiết lập tài khoản**
+## **I. Thiết lập tài khoản**
 
-**1. Tạo user và phân quyền**
+### **1. Tạo user và phân quyền**
 
 \- Để quản lý user chúng ta vào tab People, để tạo user mình bấm tiếp
 vào Create New.
@@ -56,7 +56,7 @@ user được kế thừa như vậy.
 ![](.//media/image7.png)
 
 
-**2. Lựa chọn ngôn ngữ hiển thị**
+### **2. Lựa chọn ngôn ngữ hiển thị**
 
 \- Cộng đồng mạng luôn là điểm tuyệt nhất của mã nguồn mở và Snipe-IT
 cũng không ngoại lệ. Bằng sự hỗ trợ của cộng đồng và nhóm tình nguyện
@@ -98,7 +98,7 @@ ngôn ngữ trong profile của từng user sau đó Save lại
 ![](.//media/image14.png)
 
 
-**3. Email Alert**
+### **3. Email Alert**
 
 \- Khi bạn là người quản lý tài sản công ty và bạn cần \"ai đó\" nhắc
 mình rằng tài sản bàn giao cho nhân viên gần hết hạn hay license phần
@@ -116,7 +116,7 @@ và bạn có thể thiết lập tại đây.
 **Lưu ý**: Ta có thể thêm vào một hay nhiều địa chỉ mail để nhận thông
 báo hết hạn, miễn là ngăn cách bởi dấu \",\" là được.
 
-**4. Google Authenticator**
+### **4. Google Authenticator**
 
 \- Kê từ phiên bản 3.6, Snipe-IT hỗ trợ xác thực 2 bước của Google. Để
 bật tính năng này bạn vào: **Admin \>\> Setting \>\> Security
@@ -154,7 +154,7 @@ vào trang đăng nhập để login vào.
 ![](.//media/image20.png)
 
 
-**II. Thiết lập để sử dụng**
+## **II. Thiết lập để sử dụng**
 
 \- Đầu tiên chúng ta cần xem các trường bắt buộc và nên có của 1 tài sản
 là những gì:
@@ -186,7 +186,7 @@ inch, mua tại Phong Vũ, nhân viên Annlt đang sử dụng, mua ngày
 Sau đây ta bắt đầu tạo các thông tin cần thiết để đưa được tài sản vào
 phần mềm
 
-**1. Công ty**
+### **1. Công ty**
 
 \- Các bạn có thể tạo nhiều công ty dựa theo quy mô và cách tổ chức của
 công ty cần sử dụng. Như ở đây mình tạo 1 công ty để làm mẫu - Công ty
@@ -202,7 +202,7 @@ Gaming
 ![](.//media/image23.png)
 
 
-**2. Danh mục tài sản**
+### **2. Danh mục tài sản**
 
 \- Chúng ta xác định màn hình này thuộc về đống tài sản Gaming - tùy vào
 tài sản mà bạn cần quản lý thuộc danh mục nào mà tạo (VD: nội ngoại
@@ -226,7 +226,7 @@ lý tài sản (Asset).
 
 ![](.//media/image26.png)
 
-**3. Nhà sản xuất**
+### **3. Nhà sản xuất**
 
 -   **Cài đặt > Nhà sản xuất > Tạo mới**
 
@@ -239,7 +239,7 @@ lý tài sản (Asset).
 ![](.//media/image29.png)
 
 
-**4. Kiểu tài sản**
+### **4. Kiểu tài sản**
 
 \- Phần này thì tùy mình xác định theo các loại thiết bị trong công ty
 mình. VD: Công ty mình chỉ có màn hình 24 inch nhưng sẽ có nhiều hãng
@@ -256,7 +256,7 @@ danh mục) \> Lưu
 ![](.//media/image31.png)
 
 
-**5. Nhà cung cấp**
+### **5. Nhà cung cấp**
 
 \- Tạo đơn vị cung cấp thiết bị - ở đây sẽ là Phong Vũ
 
@@ -270,7 +270,7 @@ danh mục) \> Lưu
 ![](.//media/image33.png)
 
 
-**6. Địa phương**
+### **6. Địa phương**
 
 \- Tạo địa chỉ công ty bạn, nếu có chi nhánh khác thì tạo thêm, hoặc
 dạng tập đoàn đứng tên nhiều công ty thì bạn tạo thêm công ty ở phần 1
@@ -285,7 +285,7 @@ dạng tập đoàn đứng tên nhiều công ty thì bạn tạo thêm công t
 ![](.//media/image34.png)
 
 
-**7. Thành viên**
+### **7. Thành viên**
 
 \- Về cơ bản thì tạo người dùng để gán tài sản là chính, ngoài ra còn có
 một số tính năng khác mình sẽ giới thiệu thêm sau
@@ -300,7 +300,7 @@ một số tính năng khác mình sẽ giới thiệu thêm sau
 ![](.//media/image36.png)
 
 
-**8. Tạo tài sản**
+### **8. Tạo tài sản**
 
 \- Bắt đầu tạo tài sản dựa theo thông tin đã tạo.
 
@@ -343,7 +343,7 @@ một số tính năng khác mình sẽ giới thiệu thêm sau
 ![](.//media/image40.png)
 
 
-**9. Import file**
+### **9. Import file**
 
 \- Về cơ bản thì ta đã nhập liệu cho tài sản, sau khi nhập thủ công để
 nắm cơ chế hoạt động. Nhưng để tiện lợi và nhanh gọn hơn, ta sẽ cùng tìm
@@ -369,7 +369,7 @@ lại cho ta để giúp việc quản lý khối tài sản \"khổng lồ\" v�
 và phần mềm một cách đơn giản mà hiệu quả. Bạn cần trực tiếp sử dụng
 Snipe-IT để có cái nhìn trực quan nhất về các tiện ích mà nó mang lại.
 
-**10. Tùy chỉnh Việt Hóa**
+### **10. Tùy chỉnh Việt Hóa**
 
 \- Ở đây, ta có thể sử dụng ngôn ngữ Tiếng Việt dựa vào cài đặt ngôn ngữ
 cho từng User. Ngoài ra, ta có thể tự thiết lập nội dung Tiếng Việt theo
@@ -408,7 +408,7 @@ của mình thông qua các file .php:
 ![](.//media/image52.png)
 
 
-**Tài liệu tham khảo**
+## **Tài liệu tham khảo**
 
 https://itforvn.com/snipeit-huong-dan-su-dung-p1-co-ban/
 
